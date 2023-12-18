@@ -1,0 +1,5 @@
+[client]
+database = res_keeper_py_dev
+user = root
+password =
+default-character-set = utf8
