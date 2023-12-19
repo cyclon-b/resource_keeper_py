@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dac1eb3-9a86-4d87-82f0-964869a01c4c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/resource_keeper_py.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/resource_keeper_py.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/competency_matrix/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/competency_matrix/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/competency_matrix/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/competency_matrix/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/competency_matrix/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/competency_matrix/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/competency_matrix/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/competency_matrix/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/competency_matrix/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/competency_matrix/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource_keeper_py/dev_mysql.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/resource_keeper_py/dev_mysql.cnf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource_keeper_py/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/resource_keeper_py/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource_keeper_py/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/resource_keeper_py/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="8dac1eb3-9a86-4d87-82f0-964869a01c4c" name="Changes" comment="Base structure models and db 2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,11 +21,56 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "cyclon-b"
+  }
 }]]></component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="develop" />
+                    <option name="lastUsedInstant" value="1703006000" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1703005991" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="996d4b68-4bee-46cc-810c-a073d249b3d7" />
+        <option name="url" value="https://github.com/cyclon-b/resource_keeper_py.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2ZixkW3M3QcFhVINmqE03xvTIeX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -54,7 +86,7 @@
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "develop",
     "ignore_missing_gitignore": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -108,12 +140,34 @@
       <updated>1702918844521</updated>
       <workItem from="1702918853319" duration="6770000" />
     </task>
+    <task id="LOCAL-00001" summary="Base structure models and db 2">
+      <option name="closed" value="true" />
+      <created>1703005814490</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703005814490</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Base structure models and db 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base structure models and db 2" />
   </component>
 </project>
