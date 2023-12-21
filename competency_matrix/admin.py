@@ -1,15 +1,10 @@
 from django.contrib import admin
 
-from competency_matrix.models import Discipline, Track, Section, Skill, Grade, SkillDescription
+from competency_matrix.models import Discipline, Section, Skill, Grade, SkillDescription
 
 
 # Register your models here.
 @admin.register(Discipline)
-class ModelNameAdmin(admin.ModelAdmin):
-    pass
-
-
-@admin.register(Track)
 class ModelNameAdmin(admin.ModelAdmin):
     pass
 

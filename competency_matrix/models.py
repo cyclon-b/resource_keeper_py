@@ -7,29 +7,13 @@ class Discipline(models.Model):
     name = models.CharField(max_length=512, unique=False)
     slug = models.CharField(max_length=255, unique=True)
     description = models.TextField()
-    users = models.ManyToManyField(User, related_name='disciplines')
+    users = models.ManyToManyField(User, related_name='disciplines', blank=True)
     main_index = models.Index(fields=['name', 'slug'])
 
     class Meta:
         ordering = ['name']
         verbose_name = 'Дисциплина'
         verbose_name_plural = 'Дисциплины'
-
-    def __str__(self):
-        return self.name
-
-
-class Track(models.Model):
-    name = models.CharField(max_length=255, unique=False)
-    slug = models.CharField(max_length=255, unique=True)
-    discipline = models.ForeignKey(Discipline, related_name='tracks', on_delete=models.CASCADE)
-    users = models.ManyToManyField(User, related_name='tracks_users')
-    main_index = models.Index(fields=['name', 'slug'])
-
-    class Meta:
-        ordering = ['name']
-        verbose_name = 'Трек развития'
-        verbose_name_plural = 'Треки развития'
 
     def __str__(self):
         return self.name
@@ -55,7 +39,6 @@ class Skill(models.Model):
     name = models.CharField(max_length=512)
     slug = models.CharField(max_length=255, unique=True)
     discipline = models.ForeignKey(Discipline, related_name='skills_discipline', on_delete=models.CASCADE)
-    track = models.ForeignKey(Track, related_name='skills_tracks', on_delete=models.CASCADE)
     section = models.ForeignKey(Section, related_name='skills_sections', on_delete=models.CASCADE)
 
     class Meta:
@@ -71,8 +54,7 @@ class Grade(models.Model):
     name = models.CharField(max_length=512, unique=False)
     slug = models.CharField(max_length=255, unique=True)
     discipline = models.ForeignKey(Discipline, related_name='grades_disciplines', on_delete=models.CASCADE)
-    track = models.ForeignKey(Track, related_name='grades_tracks', on_delete=models.CASCADE)
-    users = models.ManyToManyField(User, related_name='grades_users')
+    users = models.ManyToManyField(User, related_name='grades_users', blank=True)
 
     class Meta:
         ordering = ['name']

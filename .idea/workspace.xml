@@ -4,20 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dac1eb3-9a86-4d87-82f0-964869a01c4c" name="Changes" comment="Base structure models and db 2">
-      <change afterPath="$PROJECT_DIR$/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
+    <list default="true" id="8dac1eb3-9a86-4d87-82f0-964869a01c4c" name="Changes" comment="Released auth logic">
+      <change afterPath="$PROJECT_DIR$/competency_matrix/migrations/0002_alter_discipline_users.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/competency_matrix/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/competency_matrix/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/competency_matrix/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource_keeper_py/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/resource_keeper_py/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/competency_matrix/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/competency_matrix/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/competency_matrix/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/competency_matrix/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/competency_matrix/migrations/0002_track.py" beforeDir="false" afterPath="$PROJECT_DIR$/up_grade/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/competency_matrix/migrations/0003_grade_section_skill_skilldescription.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/competency_matrix/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/competency_matrix/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resource_keeper_py/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/resource_keeper_py/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/up_grade/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/up_grade/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/up_grade/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/up_grade/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="feature/matrix_serializers" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,6 +57,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/auth" />
+                    <option name="lastUsedInstant" value="1703023442" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="feature/matrix_serializers" />
                     <option name="lastUsedInstant" value="1703006271" />
@@ -97,26 +101,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Django Server.resource_keeper_py.executor": "Run",
-    "HTTP Request.rest-api | #1.executor": "Run",
-    "HTTP Request.rest-api | #2.executor": "Run",
-    "HTTP Request.rest-api | #3.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/matrix__serializers",
-    "ignore_missing_gitignore": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Django Server.resource_keeper_py.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.rest-api | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.rest-api | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.rest-api | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.rest-api | #4.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/auth&quot;,
+    &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Projects\reskeeper_py\resource_keeper_py\api" />
@@ -130,6 +135,9 @@
       <method v="2" />
     </configuration>
     <configuration name="rest-api | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="resource_keeper_py" type="Python.DjangoServer" factoryName="Django server">
@@ -159,8 +167,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.rest-api | #2" />
+        <item itemvalue="HTTP Request.rest-api | #4" />
         <item itemvalue="HTTP Request.rest-api | #3" />
+        <item itemvalue="HTTP Request.rest-api | #2" />
         <item itemvalue="HTTP Request.rest-api | #1" />
       </list>
     </recent_temporary>
@@ -168,7 +177,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-7a29c1521ef0-c986f194a52a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.11799.298" />
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
       </set>
     </attachedChunks>
   </component>
@@ -181,7 +190,10 @@
       <option name="presentableId" value="Default" />
       <updated>1702918844521</updated>
       <workItem from="1702918853319" duration="6770000" />
-      <workItem from="1703006011673" duration="7563000" />
+      <workItem from="1703006011673" duration="7764000" />
+      <workItem from="1703090620417" duration="8520000" />
+      <workItem from="1703179868947" duration="240000" />
+      <workItem from="1703180135932" duration="6531000" />
     </task>
     <task id="LOCAL-00001" summary="Base structure models and db 2">
       <option name="closed" value="true" />
@@ -199,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703006027485</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Released auth logic">
+      <option name="closed" value="true" />
+      <created>1703023468055</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703023468055</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +239,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Base structure models and db 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Base structure models and db 2" />
+    <MESSAGE value="Released auth logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Released auth logic" />
   </component>
 </project>
