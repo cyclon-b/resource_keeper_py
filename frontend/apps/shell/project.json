@@ -8,16 +8,25 @@
   "targets": {
     "build": {
       "executor": "@nx/angular:webpack-browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/shell",
         "index": "apps/shell/src/index.html",
         "main": "apps/shell/src/main.ts",
-        "polyfills": ["zone.js"],
+        "polyfills": [
+          "zone.js"
+        ],
         "tsConfig": "apps/shell/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/shell/src/favicon.ico", "apps/shell/src/assets"],
-        "styles": ["apps/shell/src/styles.scss"],
+        "assets": [
+          "apps/shell/src/favicon.ico",
+          "apps/shell/src/assets"
+        ],
+        "styles": [
+          "apps/shell/src/styles.scss"
+        ],
         "scripts": [],
         "customWebpackConfig": {
           "path": "apps/shell/webpack.config.ts"
@@ -25,6 +34,12 @@
       },
       "configurations": {
         "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/shell/src/environments/environment.ts",
+              "with": "apps/shell/src/environments/environment.prod.ts"
+            }
+          ],
           "budgets": [
             {
               "type": "initial",
@@ -43,6 +58,12 @@
           }
         },
         "development": {
+          "fileReplacements": [
+            {
+              "replace": "apps/shell/src/environments/environment.ts",
+              "with": "apps/shell/src/environments/environment.dev.ts"
+            }
+          ],
           "buildOptimizer": false,
           "optimization": false,
           "vendorChunk": true,
@@ -77,11 +98,15 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"]
+      "outputs": [
+        "{options.outputFile}"
+      ]
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "apps/shell/jest.config.ts"
       }
@@ -90,6 +115,7 @@
       "executor": "@nx/web:file-server",
       "options": {
         "buildTarget": "shell:build",
+        "gzip": true,
         "port": 4200
       }
     }

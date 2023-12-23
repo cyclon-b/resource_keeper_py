@@ -4,117 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dac1eb3-9a86-4d87-82f0-964869a01c4c" name="Changes" comment="Added competency matrix data getting">
-      <change afterPath="$PROJECT_DIR$/frontend/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.eslintignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.prettierignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth-e2e/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth-e2e/cypress.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth-e2e/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth-e2e/src/e2e/app.cy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth-e2e/src/fixtures/example.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth-e2e/src/support/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth-e2e/src/support/commands.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth-e2e/src/support/e2e.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth-e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/jest.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/module-federation.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/src/app/app.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/src/app/app.routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/src/app/remote-entry/entry.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/src/app/remote-entry/entry.routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/src/app/remote-entry/nx-welcome.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/src/bootstrap.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/src/test-setup.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/tsconfig.editor.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/webpack.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/auth/webpack.prod.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/cypress.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/src/e2e/app.cy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/src/fixtures/example.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/src/support/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/src/support/commands.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/src/support/e2e.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/jest.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/module-federation.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/app/app.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/app/app.routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/app/remote-entry/entry.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/app/remote-entry/entry.routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/app/remote-entry/nx-welcome.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/bootstrap.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/test-setup.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/tsconfig.editor.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/webpack.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/competency-matrix/webpack.prod.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell-e2e/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell-e2e/cypress.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell-e2e/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell-e2e/src/e2e/app.cy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell-e2e/src/fixtures/example.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell-e2e/src/support/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell-e2e/src/support/commands.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell-e2e/src/support/e2e.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell-e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/jest.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/module-federation.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/app/app.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/app/app.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/app/app.routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/app/nx-welcome.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/bootstrap.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/test-setup.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/tsconfig.editor.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/webpack.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/webpack.prod.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/jest.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/jest.preset.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/nx.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/tsconfig.base.json" afterDir="false" />
+    <list default="true" id="8dac1eb3-9a86-4d87-82f0-964869a01c4c" name="Changes" comment="init frontend">
+      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/environments/environment.dev.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/apps/shell/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/guards/auth/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/interceptors/auth/auth.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/interceptors/cache/cache.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/interceptors/errors-handler/errors-handler.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/interceptors/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/models/auth/login.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/models/auth/register.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/models/auth/user.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/models/config/environment.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/models/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/store/auth-store/auth-store.methods.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/store/auth-store/auth-store.selectors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/store/auth-store/auth-store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/store/auth-store/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/store/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/store/root-store/root-store.methods.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/store/root-store/root-store.selectors.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/store/root-store/root-store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/utils/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/utils/services/auth/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/utils/services/environment/environment.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/utils/services/notification/notification.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/libs/global/utils/services/storage/storage.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/apps/shell/project.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/apps/shell/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +50,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -209,34 +132,45 @@
     "HTTP Request.rest-api | #2.executor": "Run",
     "HTTP Request.rest-api | #3.executor": "Run",
     "HTTP Request.rest-api | #4.executor": "Run",
+    "Nx.auth:serve-static:development.executor": "Run",
+    "Nx.auth:serve:development.executor": "Run",
+    "Nx.competency-matrix:serve-static:development.executor": "Run",
     "Nx.shell:build:development.executor": "Run",
+    "Nx.shell:serve-static.executor": "Run",
+    "Nx.shell:serve.executor": "Run",
+    "Nx.shell:serve:development.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "feature/frontend__init",
     "ignore_missing_gitignore": "true",
-    "last_opened_file_path": "E:/Projects/reskeeper_py/resource_keeper_py/frontend",
+    "last_opened_file_path": "E:/Projects/reskeeper_py/resource_keeper_py/frontend/libs/global/store/root-store",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettier.import.notification.dismissed": "true",
-    "settings.editor.selected.configurable": "nx-console",
-    "ts.external.directory.path": "E:\\Projects\\reskeeper_py\\resource_keeper_py\\frontend\\res\\node_modules\\typescript\\lib",
+    "settings.editor.selected.configurable": "preferences.sourceCode.JavaScript",
+    "ts.external.directory.path": "E:\\Projects\\reskeeper_py\\resource_keeper_py\\frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Projects\reskeeper_py\resource_keeper_py\frontend\libs\global\store\root-store" />
+      <recent name="E:\Projects\reskeeper_py\resource_keeper_py\frontend\apps\auth\src" />
+      <recent name="E:\Projects\reskeeper_py\resource_keeper_py\frontend\apps\competency-matrix\src" />
+      <recent name="E:\Projects\reskeeper_py\resource_keeper_py\frontend\libs\global\environments" />
       <recent name="E:\Projects\reskeeper_py\resource_keeper_py\frontend" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projects\reskeeper_py\resource_keeper_py\frontend\apps\shell\src" />
       <recent name="E:\Projects\reskeeper_py\resource_keeper_py\frontend" />
       <recent name="E:\Projects\reskeeper_py\resource_keeper_py\api" />
     </key>
   </component>
-  <component name="RunManager" selected="Nx.shell:build:development">
+  <component name="RunManager" selected="Nx.shell:serve:development">
     <configuration name="rest-api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -249,9 +183,57 @@
     <configuration name="rest-api | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="auth:serve-static:development" type="NxRunConfigurationType">
+      <option name="nx-projects" value="auth" />
+      <option name="nx-targets" value="serve-static" />
+      <option name="nx-target-configuration" value="development" />
+      <envs />
+      <option name="arguments" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="auth:serve:development" type="NxRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="nx-projects" value="auth" />
+      <option name="nx-targets" value="serve" />
+      <option name="nx-target-configuration" value="development" />
+      <envs />
+      <option name="arguments" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="competency-matrix:serve-static:development" type="NxRunConfigurationType">
+      <option name="nx-projects" value="competency-matrix" />
+      <option name="nx-targets" value="serve-static" />
+      <option name="nx-target-configuration" value="development" />
+      <envs />
+      <option name="arguments" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="shell:build:development" type="NxRunConfigurationType">
       <option name="nx-projects" value="shell" />
       <option name="nx-targets" value="build" />
+      <option name="nx-target-configuration" value="development" />
+      <envs />
+      <option name="arguments" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="shell:serve-static" type="NxRunConfigurationType">
+      <option name="nx-projects" value="shell" />
+      <option name="nx-targets" value="serve-static" />
+      <option name="nx-target-configuration" value="" />
+      <envs />
+      <option name="arguments" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="shell:serve" type="NxRunConfigurationType">
+      <option name="nx-projects" value="shell" />
+      <option name="nx-targets" value="serve" />
+      <option name="nx-target-configuration" value="" />
+      <envs />
+      <option name="arguments" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="shell:serve:development" type="NxRunConfigurationType">
+      <option name="nx-projects" value="shell" />
+      <option name="nx-targets" value="serve" />
       <option name="nx-target-configuration" value="development" />
       <envs />
       <option name="arguments" value="" />
@@ -284,6 +266,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Nx.auth:serve:development" />
         <item itemvalue="HTTP Request.rest-api | #4" />
         <item itemvalue="HTTP Request.rest-api | #3" />
         <item itemvalue="HTTP Request.rest-api | #2" />
@@ -320,7 +303,8 @@
       <workItem from="1703271176252" duration="37000" />
       <workItem from="1703271218359" duration="56000" />
       <workItem from="1703271278540" duration="189000" />
-      <workItem from="1703271483717" duration="934000" />
+      <workItem from="1703271483717" duration="3637000" />
+      <workItem from="1703336221546" duration="12783000" />
     </task>
     <task id="LOCAL-00001" summary="Base structure models and db 2">
       <option name="closed" value="true" />
@@ -346,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703023468055</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="init frontend">
+      <option name="closed" value="true" />
+      <created>1703273085641</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703273085641</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,6 +359,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Base structure models and db 2" />
     <MESSAGE value="Released auth logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Released auth logic" />
+    <MESSAGE value="init frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="init frontend" />
   </component>
 </project>
