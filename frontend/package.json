@@ -1,7 +1,8 @@
 {
-  "name": "@workspace/source",
-  "version": "0.0.0",
-  "license": "MIT",
+  "name": "resource-keeper-py",
+  "version": "0.1.0",
+  "license": "GNU GPLv3 http://www.gnu.org",
+  "author": "Gennady Artamonov",
   "scripts": {},
   "private": true,
   "dependencies": {

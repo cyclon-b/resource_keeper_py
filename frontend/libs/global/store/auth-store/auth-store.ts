@@ -5,6 +5,7 @@ import { UserModel } from '../../models';
 import { withAuthSelectors } from './auth-store.selectors';
 
 export interface AuthState {
+  token: string | null;
   isAuthenticated: boolean;
   user: UserModel | null;
   isAuthenticationPending: boolean;
@@ -12,6 +13,7 @@ export interface AuthState {
 }
 
 export const initialState: AuthState = {
+  token: null,
   isAuthenticated: false,
   user: null,
   isAuthenticationPending: false,
@@ -25,6 +27,4 @@ export const AuthStore = signalStore(
   withDevtools('AuthStore'),
   withAuthSelectors(),
   withAuthMethods(),
-
-
 );
