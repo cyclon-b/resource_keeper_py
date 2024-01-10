@@ -4,15 +4,133 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dac1eb3-9a86-4d87-82f0-964869a01c4c" name="Changes" comment="basic store and services structure">
+    <list default="true" id="8dac1eb3-9a86-4d87-82f0-964869a01c4c" name="Changes" comment="added auth and config stores">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/libs/global/store/auth-store/auth-store.methods.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/libs/global/store/auth-store/auth-store.methods.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/libs/global/store/auth-store/auth-store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/libs/global/store/auth-store/auth-store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/libs/global/utils/services/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/libs/global/utils/services/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth-e2e/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth-e2e/cypress.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth-e2e/project.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth-e2e/src/e2e/app.cy.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth-e2e/src/fixtures/example.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth-e2e/src/support/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth-e2e/src/support/commands.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth-e2e/src/support/e2e.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth-e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/jest.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/module-federation.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/project.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/src/app/app.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/src/app/app.routes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/src/app/remote-entry/entry.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/src/app/remote-entry/entry.routes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/src/app/remote-entry/nx-welcome.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/src/bootstrap.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/src/test-setup.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/tsconfig.editor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/webpack.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/auth/webpack.prod.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/cypress.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/project.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/src/e2e/app.cy.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/src/fixtures/example.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/src/support/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/src/support/commands.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/src/support/e2e.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix-e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/jest.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/module-federation.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/project.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/app/app.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/app/app.routes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/app/remote-entry/entry.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/app/remote-entry/entry.routes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/app/remote-entry/nx-welcome.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/bootstrap.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/src/test-setup.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/tsconfig.editor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/webpack.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/competency-matrix/webpack.prod.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell-e2e/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell-e2e/cypress.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell-e2e/project.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell-e2e/src/e2e/app.cy.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell-e2e/src/fixtures/example.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell-e2e/src/support/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell-e2e/src/support/commands.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell-e2e/src/support/e2e.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell-e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/jest.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/module-federation.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/project.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/app/app.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/app/app.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/app/app.routes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/app/nx-welcome.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/bootstrap.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/environments/environment.dev.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/src/test-setup.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/tsconfig.editor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/webpack.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/apps/shell/webpack.prod.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/guards/auth/auth.guard.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/interceptors/auth/auth.interceptor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/interceptors/cache/cache.interceptor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/interceptors/errors-handler/errors-handler.interceptor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/interceptors/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/models/auth/login.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/models/auth/register.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/models/auth/user.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/models/config/environment.model.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/models/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/store/auth-store/auth-store.methods.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/store/auth-store/auth-store.selectors.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/store/auth-store/auth-store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/store/auth-store/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/store/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/store/root-store/root-store.methods.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/store/root-store/root-store.selectors.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/store/root-store/root-store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/utils/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/utils/services/auth/auth.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/utils/services/environment/environment.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/utils/services/notification/notification.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/libs/global/utils/services/storage/storage.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource_keeper_py/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/resource_keeper_py/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource_keeper_py/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/resource_keeper_py/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +214,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -153,7 +274,7 @@
       <recent name="E:\Projects\reskeeper_py\resource_keeper_py\api" />
     </key>
   </component>
-  <component name="RunManager" selected="Nx.shell:serve:development">
+  <component name="RunManager" selected="Nx.shell:serve">
     <configuration name="rest-api | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -289,7 +410,17 @@
       <workItem from="1703271483717" duration="3637000" />
       <workItem from="1703336221546" duration="13290000" />
       <workItem from="1703419617846" duration="7108000" />
-      <workItem from="1703529715733" duration="1232000" />
+      <workItem from="1703529715733" duration="2064000" />
+      <workItem from="1703620423354" duration="93000" />
+      <workItem from="1704398066099" duration="29000" />
+      <workItem from="1704398101655" duration="594000" />
+      <workItem from="1704575420019" duration="19000" />
+      <workItem from="1704661472592" duration="301000" />
+      <workItem from="1704745861003" duration="1735000" />
+      <workItem from="1704823018828" duration="6109000" />
+      <workItem from="1704830601257" duration="365000" />
+      <workItem from="1704910887452" duration="1612000" />
+      <workItem from="1704912516919" duration="909000" />
     </task>
     <task id="LOCAL-00001" summary="Base structure models and db 2">
       <option name="closed" value="true" />
@@ -331,7 +462,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703367783865</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added auth and config stores">
+      <option name="closed" value="true" />
+      <created>1703531785643</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703531785643</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +493,7 @@
     <MESSAGE value="Released auth logic" />
     <MESSAGE value="init frontend" />
     <MESSAGE value="basic store and services structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic store and services structure" />
+    <MESSAGE value="added auth and config stores" />
+    <option name="LAST_COMMIT_MESSAGE" value="added auth and config stores" />
   </component>
 </project>
