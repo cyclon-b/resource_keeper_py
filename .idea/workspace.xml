@@ -4,108 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dac1eb3-9a86-4d87-82f0-964869a01c4c" name="Changes" comment="new frontend iteration WIP 2">
-      <change afterPath="$PROJECT_DIR$/auth/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/fragments/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/fragments/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/auth/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/auth/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/resource_keeper_py.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/resource_keeper_py.iml" afterDir="false" />
+    <list default="true" id="8dac1eb3-9a86-4d87-82f0-964869a01c4c" name="Changes" comment="static frontend WIP 1">
+      <change afterPath="$PROJECT_DIR$/dashboard/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_profile/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_profile/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_profile/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_profile/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_profile/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_profile/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user_profile/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.prettierignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.prettierrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/cypress.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/project.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/src/e2e/app.cy.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/src/fixtures/example.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/src/support/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/src/support/commands.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/src/support/e2e.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/e2e/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jest.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/jest.preset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/nx.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/project.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/blocks/top-menu/top-menu.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/blocks/top-menu/top-menu.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/blocks/top-menu/top-menu.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/auth/auth.routes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/auth/forgot-password/forgot-password.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/auth/forgot-password/forgot-password.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/auth/forgot-password/forgot-password.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/auth/login/login.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/auth/login/login.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/auth/login/login.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/auth/register/register.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/auth/register/register.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/auth/register/register.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/auth/reset-password/reset-password.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/auth/reset-password/reset-password.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/auth/reset-password/reset-password.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/competency-matrix/competency-matrix.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/competency-matrix/competency-matrix.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/competency-matrix/competency-matrix.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/competency-matrix/competency-matrix.routes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/dashboard/dashboard.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/dashboard/dashboard.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/dashboard/dashboard.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/dashboard/dashboard.routes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/profile/profile.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/profile/profile.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/profile/profile.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/pages/profile/profile.routes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/global/guards/auth/auth.guard.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/global/interceptors/auth-token/auth-token.interceptor.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/global/interceptors/http-error-handler/http-error-handler.interceptor.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/global/services/auth/auth.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/global/services/utils/destroy/destroy.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/global/services/utils/navigation/navigation.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/global/services/utils/storage/storage.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/store/root.methods.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/store/root.selectors.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/store/root.store.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/config/routes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.dev.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styles.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/test-setup.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.editor.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource_keeper_py/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/resource_keeper_py/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resource_keeper_py/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/resource_keeper_py/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/pages/auth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/auth/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,45 +125,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.resource_keeper_py.executor": "Run",
-    "HTTP Request.rest-api | #1.executor": "Run",
-    "HTTP Request.rest-api | #2.executor": "Run",
-    "HTTP Request.rest-api | #3.executor": "Run",
-    "HTTP Request.rest-api | #4.executor": "Run",
-    "Nx.auth:serve-static:development.executor": "Run",
-    "Nx.auth:serve:development.executor": "Run",
-    "Nx.competency-matrix:serve-static:development.executor": "Run",
-    "Nx.resource-keeper-client:serve-static.executor": "Run",
-    "Nx.resource-keeper-client:serve:development.executor": "Run",
-    "Nx.resource-keeper-client:serve:production.executor": "Run",
-    "Nx.shell:build:development.executor": "Run",
-    "Nx.shell:serve-static.executor": "Run",
-    "Nx.shell:serve.executor": "Run",
-    "Nx.shell:serve:development.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "git-widget-placeholder": "feature/frontend__init",
-    "ignore_missing_gitignore": "true",
-    "last_opened_file_path": "E:/Projects/reskeeper_py/resource_keeper_py",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "npm.start.executor": "Run",
-    "prettier.import.notification.dismissed": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "E:\\Projects\\reskeeper_py\\resource_keeper_py\\frontend\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.resource_keeper_py.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.rest-api | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.rest-api | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.rest-api | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.rest-api | #4.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.auth:serve-static:development.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.auth:serve:development.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.competency-matrix:serve-static:development.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.resource-keeper-client:serve-static.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.resource-keeper-client:serve:development.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.resource-keeper-client:serve:production.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.shell:build:development.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.shell:serve-static.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.shell:serve.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.shell:serve:development.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/frontend__init&quot;,
+    &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Projects/reskeeper_py/resource_keeper_py&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;prettier.import.notification.dismissed&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\Projects\\reskeeper_py\\resource_keeper_py\\frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Projects\reskeeper_py\resource_keeper_py" />
@@ -454,7 +374,8 @@
       <workItem from="1706114741757" duration="2104000" />
       <workItem from="1706122738866" duration="2000" />
       <workItem from="1706122841818" duration="5138000" />
-      <workItem from="1706129248926" duration="1193000" />
+      <workItem from="1706129248926" duration="1410000" />
+      <workItem from="1706201225662" duration="5853000" />
     </task>
     <task id="LOCAL-00001" summary="Base structure models and db 2">
       <option name="closed" value="true" />
@@ -520,7 +441,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704921077506</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="static frontend WIP 1">
+      <option name="closed" value="true" />
+      <created>1706130634043</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706130634043</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,6 +475,7 @@
     <MESSAGE value="added auth and config stores" />
     <MESSAGE value="new frontend iteration" />
     <MESSAGE value="new frontend iteration WIP 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="new frontend iteration WIP 2" />
+    <MESSAGE value="static frontend WIP 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="static frontend WIP 1" />
   </component>
 </project>

@@ -1,5 +1,48 @@
 {% extends "../../fragments/base.html" %}
 {% block title %} ResKeeperPy Login {% endblock title %}
 {% block content %}
-<h1>Login!</h1>
+
+    <div class="row d-flex justify-content-center align-items-center vh-100">
+        <div class="card w-50">
+            <div class="card-body">
+                <div class="card-title d-flex justify-content-center">
+                    <div>
+                        <h2>Resource keeper Py</h2>
+                    </div>
+                </div>
+                <div class="card-subtitle d-flex justify-content-center">
+                    <h4>
+                        Вход в приложение
+                    </h4>
+                </div>
+                <div class="card-text">
+                    <form method="post" action="{% url 'signin' %}">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="form-floating mb-3">
+                                <input name="email" type="email" class="form-control" id="emailInput"
+                                       placeholder="Email">
+                                <label for="emailInput">Email</label>
+                            </div>
+                            <div class="form-floating">
+                                <input name="password" type="password" class="form-control" id="passwordInput"
+                                       placeholder="Пароль">
+                                <label for="passwordInput">Пароль</label>
+                            </div>
+                            <div class="row d-flex mt-3 align-items-center">
+                                <div class="col-md-12 col-xl-10 d-flex justify-content-end" >
+                                    <a href="{% url 'register' %}">Зарегистрироваться</a>
+                                </div>
+
+                                <div class="col-md-12 col-xl-2 d-flex justify-content-end">
+                                    <button type="submit" class="btn btn-success end-0">Войти</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 {% endblock content %}
