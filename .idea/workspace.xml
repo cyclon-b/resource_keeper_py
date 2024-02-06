@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dac1eb3-9a86-4d87-82f0-964869a01c4c" name="Changes" comment="Added Login and Register templates">
-      <change afterPath="$PROJECT_DIR$/auth/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/pages/dashboard/dashboard.html" afterDir="false" />
+    <list default="true" id="8dac1eb3-9a86-4d87-82f0-964869a01c4c" name="Changes" comment="Register form rework">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resource_keeper_py/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/resource_keeper_py/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/auth/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/pages/auth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/auth/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -375,7 +370,7 @@
       <workItem from="1706730428487" duration="594000" />
       <workItem from="1707042322443" duration="1341000" />
       <workItem from="1707238649627" duration="41000" />
-      <workItem from="1707238701711" duration="6940000" />
+      <workItem from="1707238701711" duration="7951000" />
     </task>
     <task id="LOCAL-00001" summary="Base structure models and db 2">
       <option name="closed" value="true" />
@@ -457,7 +452,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706207411895</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Register form rework">
+      <option name="closed" value="true" />
+      <created>1707253937479</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707253937479</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,6 +488,7 @@
     <MESSAGE value="new frontend iteration WIP 2" />
     <MESSAGE value="static frontend WIP 1" />
     <MESSAGE value="Added Login and Register templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Login and Register templates" />
+    <MESSAGE value="Register form rework" />
+    <option name="LAST_COMMIT_MESSAGE" value="Register form rework" />
   </component>
 </project>

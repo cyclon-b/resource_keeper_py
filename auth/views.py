@@ -2,7 +2,7 @@ from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 
-from auth.forms import RegistrationForm
+from auth.forms import RegistrationForm, LoginForm
 
 
 def register(request):
@@ -16,15 +16,11 @@ def register(request):
 
 
 def login(request):
-    return render(request, 'pages/auth/login.html')
-
-
-def sign_in(request):
-    email = request.POST.get('email')
-    password = request.POST.get('password')
-    user = authenticate(username=email, password=password)
-    if user is not None:
-        return redirect('/dashboard')
-    else:
-        error_message = f'Не удалось войти'
-        return redirect('/auth/login')
+    form = LoginForm(request.POST)
+    if form.is_valid():
+        username = form.cleaned_data['email']
+        password = form.cleaned_data['password']
+        user = authenticate(username=username, password=password)
+        if user is not None:
+            return redirect('/dashboard')
+    return render(request, 'pages/auth/login.html', {'login_form': form})

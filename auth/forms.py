@@ -21,3 +21,10 @@ class RegistrationForm(forms.Form):
         repeat_password = cleaned_data.get('repeat_password')
         if password != repeat_password:
             raise forms.ValidationError('Пароли не совпадают')
+
+
+class LoginForm(forms.Form):
+    email = forms.EmailField(required=True, widget=EmailInput(
+        attrs={'class': 'form-control', 'id': 'emailInput', 'placeholder': 'Email'}))
+    password = forms.CharField(required=True, widget=PasswordInput(
+        attrs={'class': 'form-control', 'id': 'passwordInput', 'placeholder': 'Пароль', 'x-model': 'password'}))

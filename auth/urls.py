@@ -7,6 +7,5 @@ urlpatterns = [
     path('', RedirectView.as_view(url='login')),
     path('register/', views.register, name='register'),
     path('login/', views.login, name='login'),
-    path('signin/', views.sign_in, name='signin'),
 
 ]
