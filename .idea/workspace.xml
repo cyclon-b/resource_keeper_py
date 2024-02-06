@@ -4,25 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dac1eb3-9a86-4d87-82f0-964869a01c4c" name="Changes" comment="static frontend WIP 1">
-      <change afterPath="$PROJECT_DIR$/dashboard/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_profile/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_profile/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_profile/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_profile/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_profile/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_profile/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user_profile/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="8dac1eb3-9a86-4d87-82f0-964869a01c4c" name="Changes" comment="Added Login and Register templates">
+      <change afterPath="$PROJECT_DIR$/auth/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/pages/dashboard/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resource_keeper_py/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/resource_keeper_py/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/auth/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/pages/auth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/pages/auth/register.html" afterDir="false" />
@@ -147,7 +136,7 @@
     &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR&quot;,
     &quot;git-widget-placeholder&quot;: &quot;feature/frontend__init&quot;,
     &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/Projects/reskeeper_py/resource_keeper_py&quot;,
@@ -314,8 +303,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.build" />
         <item itemvalue="Nx.auth:serve:development" />
         <item itemvalue="HTTP Request.rest-api | #4" />
         <item itemvalue="HTTP Request.rest-api | #3" />
@@ -325,7 +314,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
       </set>
     </attachedChunks>
   </component>
@@ -375,7 +364,18 @@
       <workItem from="1706122738866" duration="2000" />
       <workItem from="1706122841818" duration="5138000" />
       <workItem from="1706129248926" duration="1410000" />
-      <workItem from="1706201225662" duration="5853000" />
+      <workItem from="1706201225662" duration="5931000" />
+      <workItem from="1706213774847" duration="3312000" />
+      <workItem from="1706219074284" duration="451000" />
+      <workItem from="1706291871530" duration="5663000" />
+      <workItem from="1706355274959" duration="3954000" />
+      <workItem from="1706369104256" duration="972000" />
+      <workItem from="1706637840580" duration="88000" />
+      <workItem from="1706638279261" duration="2005000" />
+      <workItem from="1706730428487" duration="594000" />
+      <workItem from="1707042322443" duration="1341000" />
+      <workItem from="1707238649627" duration="41000" />
+      <workItem from="1707238701711" duration="6940000" />
     </task>
     <task id="LOCAL-00001" summary="Base structure models and db 2">
       <option name="closed" value="true" />
@@ -449,7 +449,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706130634043</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added Login and Register templates">
+      <option name="closed" value="true" />
+      <created>1706207411895</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1706207411895</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,6 +484,7 @@
     <MESSAGE value="new frontend iteration" />
     <MESSAGE value="new frontend iteration WIP 2" />
     <MESSAGE value="static frontend WIP 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="static frontend WIP 1" />
+    <MESSAGE value="Added Login and Register templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Login and Register templates" />
   </component>
 </project>

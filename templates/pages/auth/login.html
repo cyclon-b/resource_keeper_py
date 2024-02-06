@@ -20,12 +20,12 @@
                         {% csrf_token %}
                         <div class="row">
                             <div class="form-floating mb-3">
-                                <input name="email" type="email" class="form-control" id="emailInput"
+                                <input name="email" required type="email" class="form-control" id="emailInput"
                                        placeholder="Email">
                                 <label for="emailInput">Email</label>
                             </div>
                             <div class="form-floating">
-                                <input name="password" type="password" class="form-control" id="passwordInput"
+                                <input name="password" required type="password" class="form-control" id="passwordInput"
                                        placeholder="Пароль">
                                 <label for="passwordInput">Пароль</label>
                             </div>
@@ -37,6 +37,11 @@
                                 <div class="col-md-12 col-xl-2 d-flex justify-content-end">
                                     <button type="submit" class="btn btn-success end-0">Войти</button>
                                 </div>
+                                {% if error_message %}
+                                    <div class="text-danger">
+                                        {{ error_message }}
+                                    </div>
+                                {% endif %}
                             </div>
                         </div>
                     </form>

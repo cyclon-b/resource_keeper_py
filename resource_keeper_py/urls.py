@@ -24,6 +24,7 @@ from resource_keeper_py import settings
 urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('', RedirectView.as_view(url='auth/')),
-                  path('auth/', include('auth.urls'))
+                  path('auth/', include('auth.urls')),
+                  path('dashboard/', include('dashboard.urls')),
 
               ] + static(settings.STATIC_URL)

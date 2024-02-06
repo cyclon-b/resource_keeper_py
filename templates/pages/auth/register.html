@@ -12,30 +12,38 @@
                 </div>
                 <div class="card-subtitle d-flex justify-content-center">
                     <h4>
-                     Регистрация в приложении
+                        Регистрация в приложении
                     </h4>
                 </div>
                 <div class="card-text">
-                    <form method="post" action="">
+                    <form x-data="{
+                    password: '',
+                    repeatPassword: '',
+                    disableSubmitPasswordsNotEqual() { return  !this.password || this.password !== this.repeatPassword},
+                    validateRepeatPassword() {return this.password !== this.repeatPassword}
+                    }" method="post" action=".">
                         {% csrf_token %}
                         <div class="row">
                             <div class="form-floating mb-3">
-                                <input name="email" type="email" class="form-control" id="emailInput"
-                                       placeholder="Email">
+                                {{ register_form.email }}
                                 <label for="emailInput">Email</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input name="password" type="password" class="form-control" id="passwordInput"
-                                       placeholder="Пароль">
+                                {{ register_form.password }}
                                 <label for="passwordInput">Пароль</label>
                             </div>
                             <div class="form-floating">
-                                <input name="password" type="password" class="form-control" id="repeatPassword"
-                                       placeholder="Повторите пароль">
+                                {{ register_form.repeat_password }}
                                 <label for="repeatPassword">Повторите пароль</label>
                             </div>
                             <div class="col d-flex justify-content-end mt-3">
-                                <button type="submit" class="btn btn-success end-0">Зарегистрироваться</button>
+                                <button :disabled="disableSubmitPasswordsNotEqual()" id="registerBtn" type="submit"
+                                        class="btn btn-success end-0">
+                                    Зарегистрироваться
+                                </button>
+                            </div>
+                            <div x-transition x-show="validateRepeatPassword()" class="alert alert-danger mt-3">
+                                Пароли не совпадают
                             </div>
                         </div>
                     </form>
@@ -43,5 +51,4 @@
             </div>
         </div>
     </div>
-
 {% endblock content %}
